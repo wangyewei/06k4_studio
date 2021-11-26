@@ -1,0 +1,204 @@
+.notice__container {
+  height: calc(100vh - #{$header-height});
+  // align-items: center;
+
+  .notice__title {
+    color: $main-color;
+    font-weight: $font-semo-bold;
+    font-size: $h2-font-size;
+  }
+
+  .noitice__list {
+    padding-top: $header-height;
+  }
+
+  .notice__item {
+    margin-bottom: 1rem;
+    cursor: pointer;
+    transition: .3s all;
+    padding-bottom: .3rem;
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    column-gap: 1.5rem;
+    position: relative;
+    text-align: center;
+
+    &:not(.item__title)::after,
+    &:not(.item__title)::before {
+      position: absolute;
+      content: "";
+      width: 0;
+      background: $title-color;
+      height: 2px;
+      display: block;
+      bottom: 0;
+      transition: .6s all;
+    }
+
+    &:not(.item__title)::after {
+      left: 0;
+    }
+
+    &:not(.item__title)::before {
+      right: 0;
+    }
+
+
+  }
+
+  .notice__item:not(.item__title):hover {
+    &:not(.item__title)::after {
+      width: 50%;
+    }
+
+    &:not(.item__title)::before {
+      width: 50%;
+    }
+
+
+    span:not(.time, .author):hover {
+      color: $main-color-alt;
+    }
+  }
+
+  .item__title {
+    color: $title-color;
+  }
+
+  // .add {
+  //   margin-top: 10rem;
+  //   height: 30%;
+  //   background: $main-color;
+  //   color: $text-color;
+  //   font-weight: $smaller-font-size;
+  //   font-size: $h1-font-size;
+  //   text-align: center;
+  //   display: flex;
+  //   justify-content: center;
+  //   align-items: center;
+  //   border-radius: 3rem;
+  // }
+}
+
+@media screen and (max-width: 768px) {
+  .notice__container {
+    margin: 0;
+
+    .notice__item:not(.item__title) {
+      margin-bottom: 0;
+      position: relative;
+      margin-bottom: $mb-1;
+
+      &:hover {
+        &:not(.item__title)::after {
+          width: 0%;
+        }
+
+        &:not(.item__title)::before {
+          width: 0%;
+        }
+
+
+        span:not(.time, .author):hover {
+          color: $main-color-alt;
+        }
+      }
+    }
+
+    .notice__item:not(.item__title):nth-child(even) {
+      border-top-right-radius: 1rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-top-left-radius: .1rem;
+    }
+
+    .notice__item:not(.item__title):nth-child(odd) {
+      border-top-right-radius: .1rem;
+      border-bottom-right-radius: 1rem;
+      border-bottom-left-radius: 1rem;
+      border-top-left-radius: 1rem;
+    }
+
+    .notice__item:not(.item__title)::after {
+      content: '';
+      position: absolute;
+      width: 10px;
+      top: 10%;
+      border: solid 8px;
+      background: none;
+    }
+
+    .notice__item:not(.item__title):nth-child(even)::after {
+      left: -15px;
+      border-color: transparent $main-color transparent transparent;
+    }
+
+    .notice__item:not(.item__title):nth-child(odd)::after {
+      left: 100%;
+      border-color: transparent transparent transparent $main-color;
+    }
+
+    .notice__item:not(.item__title):nth-child(odd) {
+      background: $main-color;
+    }
+
+    .notice__item:not(.item__title):nth-child(even) {
+      background: $main-color-alt;
+    }
+
+
+  }
+}
+
+.notices__container {
+  height: calc(100vh - #{$header-height});
+
+  .notices__data {
+    // border: 1px solid red;
+
+    .title {
+      text-align: center;
+      color: $title-color;
+      font-weight: $font-semo-bold;
+      font-size: $h2-font-size;
+    }
+
+    .author,
+    .time {
+      display: inline-block;
+      color: $text-color;
+      margin: 0 $mb-2 $mb-2 0;
+      padding-bottom: $mb-1;
+      cursor: pointer;
+      transition: .4s all;
+
+      &:hover {
+        color: $main-color;
+        border-bottom: 1px solid $main-color;
+      }
+
+    }
+
+    @media screen and (max-width: 768px) {
+      .title {
+        margin-bottom: $mb-2;
+      }
+
+      .author,
+      .time {
+        display: block;
+        text-align: center;
+      }
+
+      .content {
+        padding-top: $mb-2;
+      }
+    }
+
+
+
+    // .content {
+    //   border: 1px solid $text-color;
+    // }
+  }
+}

@@ -1,0 +1,107 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+html {
+  /*滚动动画*/
+  scroll-behavior: smooth;
+}
+
+
+body {
+  padding: $header-height 0 0 0;
+  font-family: $body-color;
+  font-size: $normal-font-size;
+  background-color: $body-color;
+  color: $text-color;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+
+.section {
+  padding: 4rem 0 2rem;
+  height: 100vh;
+  position: relative;
+}
+
+.container {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+
+.section-title {
+  font-size: $h1-font-size;
+  color: $title-color;
+  margin-bottom: $mb-3;
+}
+
+.section-subtitle {
+  display: block;
+  color: $main-color;
+  font-weight: $font-medium;
+  margin-bottom: $mb-1;
+}
+
+.bd-container {
+  max-width: 960px;
+  width: calc(100% - 2rem);
+  margin-left: $mb-2;
+  margin-right: $mb-2;
+}
+
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 8rem;
+  }
+}
+
+@media screen and (min-width: 970px) {
+
+  .bd-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

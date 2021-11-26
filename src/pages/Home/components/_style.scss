@@ -1,0 +1,73 @@
+.team__container {
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+
+  .team__content {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: $container-color;
+    border-radius: .5rem;
+    box-shadow: 0 2px 4px rgba(3, 74, 40, .15);
+    padding: .75rem;
+  }
+
+  .team__img {
+    width: 170px;
+    height: 170px;
+    align-self: center;
+    margin-bottom: $mb-2;
+  }
+
+  .team__name,
+  .team__school {
+    font-weight: $font-semo-bold;
+    color: $title-color;
+  }
+
+  .team__name {
+    font-size: $normal-font-size;
+  }
+
+  .team__title,
+  .team__school {
+    font-size: $small-font-size;
+  }
+
+  .team__title {
+    margin-bottom: $mb-1;
+  }
+
+  .team__button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    padding: .625rem .813rem;
+    border-radius: .5rem 0 .5rem 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .team__container {
+    grid-template-columns: repeat(4, 210px);
+    column-gap: 1.5rem;
+    // border: 1px solid red;
+
+    .team__content {
+      padding: 1.5rem;
+    }
+
+    .team__img {
+      width: 120px;
+      height: 120px;
+    }
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .team__container {
+    grid-template-columns: repeat(4, 210px);
+  }
+}

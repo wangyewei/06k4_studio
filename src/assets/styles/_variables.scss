@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+:root {
+  --header-height: 3rem;
+  --main-color: #eb3b5a;
+  --main-color-alt: #ff5252;
+  --title-color: #393939;
+  --text-color: #707070;
+  --text-color-light: #a6a6a6;
+  --body-color: #ffffff;
+  --container-color: #ffffff;
+
+  --body-font: 'Popppins', sans-serif;
+  --biggest-font-size: 2.25rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  --font-medium: 500;
+  --font-semo-bold: 600;
+
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  --mb-6: 3rem;
+
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 758px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+$header-height: var(--header-height);
+$main-color: var(--main-color);
+$main-color-alt: var(--main-color-alt);
+$title-color: var(--title-color);
+$text-color: var(--text-color);
+$text-color-light: var(--text-color-light);
+$body-color: var(--body-color);
+$container-color: var(--container-color);
+
+$body-font: var(--body-font);
+$biggest-font-size: var(--biggest-font-size);
+$h1-font-size: var(--h1-font-size);
+$h2-font-size: var(--h2-font-size);
+$h3-font-size: var(--h3-font-size);
+$normal-font-size: var(--normal-font-size);
+$small-font-size: var(--small-font-size);
+$smaller-font-size: var(--smaller-font-size);
+
+$font-medium: var(--font-medium);
+$font-semo-bold: var(--font-semo-bold);
+
+$mb-1: var(--mb-1);
+$mb-2: var(--mb-2);
+$mb-3: var(--mb-3);
+$mb-4: var(--mb-4);
+$mb-5: var(--mb-5);
+$mb-6: var(--mb-6);
+
+$z-tooltip: var(--z-fixed);
+$z-fixed: var(--z-fixed);
+
+
+
+body.dark-theme {
+  --title-color: #f1f3f2;
+  --text-color: #c7d1cc;
+  --body-color: #1d2521;
+  --container-color: #27302c;
+}

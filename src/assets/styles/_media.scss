@@ -1,0 +1,136 @@
+@media screen and (min-width: 758px) {
+  :root {
+    --biggest-font-size: 4rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem 0 1rem;
+    text-align: center;
+    background-color: $body-color;
+    transition: .4s;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, .1);
+    border-radius: 0 0 1rem 1rem;
+    z-index: $z-fixed;
+  }
+}
+
+@media screen and (min-width: 576px) {
+
+  .home__container,
+  .about__container,
+  .app__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+
+  .about__data,
+  .about__initial,
+  .app__data,
+  .app__initial,
+  .contact__container,
+  .contact__initial {
+    text-align: initial;
+  }
+
+  .about__img,
+  .app__img {
+    width: 380px;
+    order: -1;
+  }
+
+  .contact__container {
+    grid-template-columns: 1.75fr 1fr;
+    align-items: center;
+  }
+
+  .contact__button {
+    justify-self: center;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    margin: 0;
+  }
+
+  .section {
+    padding-top: 8rem;
+  }
+
+  .nav {
+    height: calc($header-height + 1.5rem);
+  }
+
+  .nav__list {
+    display: flex;
+  }
+
+  .nav__item {
+    margin-left: $mb-5;
+    margin-bottom: 0;
+  }
+
+  .nav__toggle {
+    display: none;
+  }
+
+
+  .home__container {
+    height: 100vh;
+    justify-items: center;
+  }
+
+  /* .services__container,
+  .menu__container {
+    /* margin-top: var(--mb-6); */
+  /* } */
+
+  .menu__container {
+    grid-template-columns: repeat(3, 210px);
+    column-gap: 4rem;
+  }
+
+  .menu__content {
+    padding: 1.5rem;
+  }
+
+  .menu__img {
+    width: 130px;
+  }
+
+  .app__store {
+    margin: 0 $mb-1 0 0;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  .bd-container {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .home__img {
+    width: 550px;
+  }
+
+  .about__container,
+  .app__container {
+    column-gap: 7rem;
+  }
+
+  .menu__container {
+    grid-template-columns: repeat(4, 210px);
+  }
+}

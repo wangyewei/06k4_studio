@@ -1,0 +1,49 @@
+.footer__container {
+  margin-top: 5rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  row-gap: 2rem;
+
+  .footer__logo {
+    font-size: $h3-font-size;
+    color: $main-color;
+    font-weight: $font-semo-bold;
+  }
+
+  .footer__description {
+    display: block;
+    font-size: $small-font-size;
+    margin: .25rem 0 $mb-3;
+  }
+
+
+}
+
+
+.footer__social {
+  font-size: 1.5rem;
+  color: $main-color;
+  margin-right: $mb-2;
+}
+
+.footer__title {
+  font-size: $h2-font-size;
+  color: $title-color;
+  margin-bottom: $mb-2;
+}
+
+.footer__link {
+  display: block;
+  color: $text-color;
+  margin-bottom: $mb-1;
+
+  &:hover {
+    color: $main-color-alt;
+  }
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: $small-font-size;
+  color: $text-color;
+  margin-top: 3.5rem;
+}

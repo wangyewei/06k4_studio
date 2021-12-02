@@ -4,9 +4,9 @@
  * @WeChat: wj826036
  * @Motto: 求知若渴，虚心若愚
  * @Description:
- * @LastEditTime: 2021-10-22 12:59:23
+ * @LastEditTime: 2021-12-02 09:03:21
  * @Version: 1.0
- * @FilePath: \官网v1.0-react-ts-前端\studio-06k4\src\pages\Home\Home.tsx
+ * @FilePath: \06k4_studio\src\pages\Home\Home.tsx
  */
 
 import React, { FC, useState, useEffect } from 'react'
@@ -121,8 +121,8 @@ const Home: FC = () => {
                   name={item.name}
                   title={item.title}
                   school={item.school}
-      
-                   />
+
+                />
               )
             })}
           </div>

@@ -4,9 +4,9 @@
  * @WeChat: wj826036
  * @Motto: 求知若渴，虚心若愚
  * @Description: 
- * @LastEditTime: 2021-11-12 11:38:38
+ * @LastEditTime: 2021-12-02 09:08:02
  * @Version: 1.0
- * @FilePath: \studio-06k4\src\pages\Home\components\TeamMenber.tsx
+ * @FilePath: \06k4_studio\src\pages\Home\components\TeamMenber.tsx
  */
 
 import React, { FC, useEffect } from 'react'
@@ -40,7 +40,7 @@ const TeamMenber: FC<TeamMenberDataType> = (props) => {
   return (
 
     <div className="team__content">
-      <img src={imgUrl} alt={name} />
+      <img src={imgUrl} alt={name} className="team__img" />
       <h3 className="team__name">{name}</h3>
       <span className="team__title">{title}</span>
       <span className="team__school">{school}</span>

@@ -4,9 +4,9 @@
  * @WeChat: wj826036
  * @Motto: 求知若渴，虚心若愚
  * @Description:
- * @LastEditTime: 2021-10-20 14:53:17
+ * @LastEditTime: 2021-12-02 16:07:45
  * @Version: 1.0
- * @FilePath: \官网v1.0-react-ts-前端\studio-06k4\src\data\uiStaticData.ts
+ * @FilePath: \06k4_studio\src\data\uiStaticData.ts
  */
 
 import { FooterInfo, IconData, FooterObj } from '../components/Footer/Footer'
@@ -50,6 +50,6 @@ export const footerProps: FooterInfo = {
   socialIcon: iconArr,
   footerTitle: services,
   copyright: copy,
-  records: '京ICP备案号：正在备案中'
+  records: '蜀ICP备 2021030366 号'
 }
 

@@ -4,13 +4,13 @@
  * @WeChat: wj826036
  * @Motto: 求知若渴，虚心若愚
  * @Description:
- * @LastEditTime: 2021-11-25 17:31:28
+ * @LastEditTime: 2021-12-02 22:05:56
  * @Version: 1.0
- * @FilePath: \studio-06k4\src\api\BASE_URL.ts
+ * @FilePath: \06k4_studio\src\api\BASE_URL.ts
  */
 
 let BASED_APIURL: string
 
-process.env.NODE_ENV === 'development' ? BASED_APIURL = 'http://101.35.127.50:3005/' : BASED_APIURL = ' '
+process.env.NODE_ENV === 'development' ? BASED_APIURL = 'https://api.06k4.com' : BASED_APIURL = 'https://api.06k4.com'
 
 export { BASED_APIURL }

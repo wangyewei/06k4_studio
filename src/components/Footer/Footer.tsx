@@ -4,15 +4,16 @@
  * @WeChat: wj826036
  * @Motto: 求知若渴，虚心若愚
  * @Description:
- * @LastEditTime: 2021-10-20 14:44:19
+ * @LastEditTime: 2021-12-02 15:56:28
  * @Version: 1.0
- * @FilePath: \官网v1.0-react-ts-前端\studio-06k4\src\components\Footer\Footer.tsx
+ * @FilePath: \06k4_studio\src\components\Footer\Footer.tsx
  */
 
 import React, { FC } from 'react'
 import classNames from 'classnames'
 // import ScrollReveal from 'scrollreveal'
 // import { useLocation } from 'react-router-dom'
+import beianImg from '../../assets/images/gaba.png'
 export interface FooterObj {
   title?: string;
   texts?: string[];
@@ -34,18 +35,9 @@ export interface FooterInfo {
   records?: string;
 }
 
+
 const Footer: FC<FooterInfo> = (props) => {
   const { logo, logoToUrl, desc, socialIcon, footerTitle, copyright, records } = props
-  // const location = useLocation().pathname
-
-
-  // useEffect(() => {
-
-  //   console.log(location)
-  // }, [location])
-
-
-
   return (
     <footer className="footer bd-container">
       <div className="footer__container bd-grid">
@@ -85,7 +77,11 @@ const Footer: FC<FooterInfo> = (props) => {
       }
 
       <p className="footer__copy">{copyright} <br />
-        {records}</p>
+        <a href="https://beian.miit.gov.cn" className="records__icp">{records}</a><br />
+        <span className="footer__gaba">
+          <img src={beianImg} alt="" /><a href="https://beian.gov.cn">公安网备案：正在备案中</a>
+        </span>
+      </p>
       {/* <p className="footer__copy"></p> */}
     </footer>
   )

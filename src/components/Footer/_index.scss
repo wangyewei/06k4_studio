@@ -46,4 +46,38 @@
   font-size: $small-font-size;
   color: $text-color;
   margin-top: 3.5rem;
+
+
+
+  .footer__gaba {
+
+    position: relative;
+
+    a {
+      color: $text-color;
+
+      &:hover {
+        color: $main-color-alt;
+      }
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: -22px;
+      top: -2px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
+
+.records__icp {
+  color: $text-color;
+  display: inline-block;
+  margin: 0 $mb-2;
+
+  &:hover {
+    color: $main-color-alt;
+  }
 }
